@@ -41,7 +41,7 @@ function toggleMenu() {
     $(".top-nav").addClass("nav-bg");
   } 
 }
-
+$('.mx-link').click(function(){hideMenu()});
 /** scrolling **/
 $(document).on('click', '.scroll', function(event){
     event.preventDefault();
