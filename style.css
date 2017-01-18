@@ -43,10 +43,15 @@ nav {
     background-color: #00af27;
     color: #fff;
     text-shadow: none;
-    transition: all 1s cubic-bezier(0, 0.68, 0, 1.26);
+    text-transform: uppercase;
+    border: 0;
+    transition: all 1s cubic-bezier(0, 1, 0, 1);
 }
 .mx-button:hover {
     background-position: -60px 0;
+}
+.mx-button:active {
+    background-color: #068522;
 }
 .header-container {
     background: url('./img/dom-blur.jpg');
@@ -110,6 +115,13 @@ nav {
     left: 0;
     transition: all .2s;
     z-index: 1;
+    color: #fff;
+}
+.top-nav-not-home {
+    background-color: #020d3b;
+    position: relative;
+    margin-bottom: 30px;
+    color: #fff;
 }
 .nav-bg {
     background-color: #020d3b;
@@ -217,7 +229,6 @@ nav {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: bolder;
-
     color: #020d3b;
     margin: 15px 0;
 }
