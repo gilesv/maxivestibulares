@@ -1,0 +1,71 @@
+<!-- Proudly coded by Vinicius Giles
+   www.cin.ufpe.br/~vgcp
+   www.github.com/gilesv
+   www.facebook.com/vgiles101 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Aprovações - MAXI Vestibulares</title>
+      <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+      <link rel="stylesheet" href="style.css" type="text/css">
+      <link rel="stylesheet" href="login.css" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+      <nav class="top-nav-not-home">
+          <div class="mx-margin top-nav-container">
+              <a href="index.html"><div class="top-nav-logo"></div></a>
+              <div id="menu" class="menu-container">
+                  <ul class="menu-top-nav">
+                      <li class="menu-top-nav-li"><a class="mx-link" href="index.html">Home</a></li>
+                      <li class="menu-top-nav-li"><a class="mx-link" href="listao.html">Aprovações</a></li>
+                      <li class="menu-top-nav-li"><span style="font-weight:bold">Área do Aluno</span></li>
+                      <li class="menu-top-nav-li" id="li-nav-redes">
+                          <div id="nav-redes">
+                              <a target="_blank" href="http://facebook.com/maxivestibares"><div class="fb-icon"></div></a>
+                              <a target="_blank" href="http://instagram.com/domcolegio"><div class="ig-icon"></div></a>
+                              <div class="phone-icon"></div>
+                              <div class="telefone">(81) 3301-5050</div>
+                          </div>
+                      </li>
+                  </ul>
+                  <div id="menu-button"></div>
+              </div>
+          </div>
+          <div class="mx-striped top-nav-bottom" style="display:block"></div>
+      </nav>      
+      <section class="login">
+        <div class="mx-loginbox">
+          <h2>Área do aluno</h2>
+          <input type="text" name="matricula" class="mx-textbox" placeholder="Matrícula">
+          <input type="password" name="senha" class="mx-textbox" placeholder="Senha">
+          <div id="login-button">
+            <button type="button" class="mx-striped mx-button">Login</button>
+          </div>
+          <div id="forgot">
+            <a href="#" id="popup">Esqueci minha senha</a>
+          </div>
+        </div>
+        <div class="mx-popup-window">
+          <img id="close-popup" src="./img/close.jpg">
+          <h2>Esqueceu sua senha?</h2>
+          <p>Envie um email para <strong>maxivestibulares@gmail.com</strong> informando seu nome e matrícula (CPF). Em resposta, você receberá a sua senha.</p><p>Para mais informações, procure a coordenação do MAXI Vestibulares/Colégio DOM.</p>
+        </div>
+      </section>
+      <footer style="position: absolute;bottom:0">
+          <div class="mx-striped copyright">MAXI Vestibulares © 2017 - Todos os direitos reservados</div>
+      </footer>
+      <script src="jquery-3.1.1.min.js"></script>
+      <script src="script.js"></script>
+      <script>
+        $('#popup').click(function() {
+          $('.mx-popup-window').css("display", "block");
+        });
+        $("#close-popup").click(function(){
+          $('.mx-popup-window').css("display", "none");
+        });
+      </script>
+  </body>
+</html>
